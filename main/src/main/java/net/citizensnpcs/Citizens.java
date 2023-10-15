@@ -618,7 +618,7 @@ public class Citizens extends JavaPlugin implements CitizensPlugin {
     private class CitizensLoadTask implements Runnable {
         @Override
         public void run() {
-            Plugin plib = Bukkit.getPluginManager().getPlugin("ProtocolLib");
+            Plugin plib = Bukkit.getPluginManager().getPlugin("ProtocolLibx");
             if (plib != null && plib.isEnabled() && ProtocolLibrary.getProtocolManager() != null) {
                 try {
                     protocolListener = new ProtocolLibListener(Citizens.this);
